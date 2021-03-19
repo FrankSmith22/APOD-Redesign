@@ -1,0 +1,12 @@
+#APODHolder{
+    height: 47vw;
+    width: 47vw;
+    max-height: 550px;
+    max-width: 550px;
+
+    background-image: url("/imgs/callisto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center; 
+}
