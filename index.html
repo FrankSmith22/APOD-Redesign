@@ -14,13 +14,13 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row mb-3">
+        <div class="row">
             <div class="col">
                 <h1 class="text-center">Astronomy Picture of the Day</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 my-2">
                 <!-- Search and Nav -->
                 <div class="card">
                     <div class="card-header p-0">
@@ -29,25 +29,32 @@
                         </form>
                     </div>
                     <div class="body bg-light">
-                        <div class="nav flex-column">
-                            <a class="nav-link active" href="#">Home</a>
-                            <a class="nav-link" href="#">Archive</a>
-                            <a class="nav-link" href="#">Submissions</a>
-                            <a class="nav-link" href="#">Index</a>
-                            <a class="nav-link" href="#">Calendar</a>
-                            <a class="nav-link" href="#">RSS</a>
-                            <a class="nav-link" href="#">Education</a>
-                            <a class="nav-link" href="#">About</a>
-                            <a class="nav-link" href="#">Discuss</a>
+                        <div class="navbar navbar-expand-md navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#APODNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse collapse" id="APODNav">
+                                <div class="nav flex-column">
+                                    <a class="nav-link active" href="#">Home</a>
+                                    <a class="nav-link" href="#">Archive</a>
+                                    <a class="nav-link" href="#">Submissions</a>
+                                    <a class="nav-link" href="#">Index</a>
+                                    <a class="nav-link" href="#">Calendar</a>
+                                    <a class="nav-link" href="#">RSS</a>
+                                    <a class="nav-link" href="#">Education</a>
+                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#">Discuss</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 my-2">
                 <!-- Astronomy Picture of the Day -->
                 <div id="APODHolder" class="mx-auto rounded"></div>
             </div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 my-2">
                 <!-- Explanation card -->
                 <div class="card">
                     <div class="card-header bg-white">
@@ -58,7 +65,12 @@
                             <li class="list-group-item bg-light"><b>Credit: </b>Frank Smith</li>
                             <li class="list-group-item bg-light"><b>Date: </b>March 19th, 2021</li>
                             <li class="list-group-item bg-light"><b>Title: </b>Great Callisto</li>
-                            <li class="list-group-item bg-light"><b>Description: </b>Callisto is a moon of jupiter, and one of my personal favorite space objects. Maybe it's uniqueness, maybe it's its peculiar size, maybe it's its close resemblance to the city planet of Coruscant. All I know is, I'm a space nerd, and I think it looks cool.<br /><b><a href="#">Read More</a></b></li>
+                            <li class="list-group-item bg-light"><b>Description: </b>Callisto is a moon of jupiter, and
+                                one of my personal favorite space objects. Maybe it's uniqueness, maybe it's its
+                                peculiar size, maybe it's its close resemblance to the city planet of Coruscant. All I
+                                know is, I'm a space nerd, and I think it looks cool...<br /><b><a href="#"
+                                        data-toggle="modal" data-target="#readMoreModal">Read
+                                        More</a></b></li>
                         </ul>
                     </div>
                 </div>
@@ -66,6 +78,54 @@
         </div>
     </div>
 
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <b> Authors &amp; editors: </b>
+                    <a href="http://www.phy.mtu.edu/faculty/Nemiroff.html">Robert Nemiroff</a>
+                    (<a href="http://www.phy.mtu.edu/">MTU</a>) &amp;
+                    <a href="https://antwrp.gsfc.nasa.gov/htmltest/jbonnell/www/bonnell.html">Jerry Bonnell</a> (<a
+                        href="http://www.astro.umd.edu/">UMCP</a>)<br>
+                    <b>NASA Official: </b> Phillip Newman
+                    <a href="lib/about_apod.html#srapply">Specific rights apply</a>.<br>
+                    <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">NASA Web
+                        Privacy Policy and Important Notices</a><br>
+                    <b>A service of:</b>
+                    <a href="https://astrophysics.gsfc.nasa.gov/">ASD</a> at
+                    <a href="https://www.nasa.gov/">NASA</a> /
+                    <a href="https://www.nasa.gov/centers/goddard/">GSFC</a>
+                    <br><b>&amp;</b> <a href="http://www.mtu.edu/">Michigan Tech. U.</a><br>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Read More Modal -->
+    <div class="modal fade" id="readMoreModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Great Callisto
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Callisto is a moon of jupiter, and
+                    one of my personal favorite space objects. Maybe it's uniqueness, maybe it's its
+                    peculiar size, maybe it's its close resemblance to the city planet of Coruscant. All I
+                    know is, I'm a space nerd, and I think it looks cool. So if you happen to be a space lover,
+                    be sure to download this image and all of our others on this site! All downloads are free and
+                    in the highest quality available.
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
