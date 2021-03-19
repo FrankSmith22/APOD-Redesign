@@ -16,6 +16,24 @@ body{
     background-position: center;
 }
 
+.prevDayMedias{
+    margin-top: 2rem;
+}
+
+.prevDayThumbnails{
+    height: 96px;
+    width: 96px;
+
+    background-image: url("/imgs/boogeymanNebula.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    /*background-attachment: fixed;*/
+    background-position: center;
+
+    margin-right: 1rem;
+}
+
 .footer{
     background-color: rgb(228, 228, 228);
 }
