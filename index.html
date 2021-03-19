@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h1 class="text-center">Astronomy Picture of the Day</h1>
-                </div>
-                <div class="col-2"></div>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Astronomy Picture of the Day</h1>
             </div>
         </div>
-        
+        <div class="row">
+            <div class="col-2">
+                <!-- Search and Nav -->
+                <div class="card">
+                    <div class="card-header p-0">
+                        <form>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="body bg-light">
+                        <div class="nav flex-column">
+                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">Archive</a>
+                            <a class="nav-link" href="#">Submissions</a>
+                            <a class="nav-link" href="#">Index</a>
+                            <a class="nav-link" href="#">Calendar</a>
+                            <a class="nav-link" href="#">RSS</a>
+                            <a class="nav-link" href="#">Education</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Discuss</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <!-- Astronomy Picture of the Day -->
+                
+            </div>
+            <div class="col-2">
+                <!-- Explanation card -->
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <b><em>About this photo...</em></b>
+                    </div>
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light"><b>Credit: </b>Frank Smith</li>
+                            <li class="list-group-item bg-light"><b>Date: </b>March 19th, 2021</li>
+                            <li class="list-group-item bg-light"><b>Title: </b>Great Callisto</li>
+                            <li class="list-group-item bg-light"><b>Description: </b>Callisto is a moon of jupiter, and one of my personal favorite space objects. Maybe it's uniqueness, maybe it's its peculiar size, maybe it's its close resemblance to the city planet of Coruscant. All I know is, I'm a space nerd, and I think it looks cool.<br /><b><a href="#">Read More</a></b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
