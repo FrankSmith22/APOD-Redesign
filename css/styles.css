@@ -1,3 +1,7 @@
+body{
+    background-image: url("/imgs/white-stars-transparent-background-24-50o.png");
+}
+
 #APODHolder{
     height: 47vw;
     width: 47vw;
@@ -7,8 +11,9 @@
     background-image: url("/imgs/callisto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-clip: content-box;
     /*background-attachment: fixed;*/
-    background-position: center; 
+    background-position: center;
 }
 
 .footer{
